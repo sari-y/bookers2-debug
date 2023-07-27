@@ -32,7 +32,7 @@
               <% end %>
           </tr>
       </table>
-      
+
       <table>
         <tr>
               <% @book.book_comments.each do |book_comment| %>
@@ -45,7 +45,7 @@
             <% end %>
         </tr>
       </table>
-            
+
             <%= form_with model: [@book, @book_comment] do |f| %>
             <%= f.text_area :comment, rows: '5', size: "80x5" %>
             <%= f.submit "送信" %>
